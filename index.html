@@ -226,5 +226,18 @@
         </footer>
     </div>
 </body>
-
+<script>
+    let prvky = document.getElementsByClassName("vypujcka-item");
+            for(let prvek of prvky){
+                    prvek.getElementsByTagName("input")[0].onclick =
+                    (e) => {check1(prvek.getElementsByClassName("detail-vypujcky-container")[0])} 
+        } 
+        function check1(prvek2){
+            if (prvek2.style.maxHeight) {
+            prvek2.style.maxHeight = null;
+            } else {
+            prvek2.style.maxHeight = prvek2.scrollHeight + "px";
+            } 
+        }
+</script>
 </html>

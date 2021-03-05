@@ -745,7 +745,10 @@ details>summary::-webkit-details-marker {
 }
 
 .detail-vypujcky-container {
-  display: none;
+  /*display: none;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease-out;
 }
 .detail-vypujcky-container.detail-vypujcky-container-checked {
   display: block;
